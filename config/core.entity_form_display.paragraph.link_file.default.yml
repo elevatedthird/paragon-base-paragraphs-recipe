@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.file
+    - field.field.paragraph.link_file.field_file
+    - field.field.paragraph.link_file.field_link_text
+    - paragraphs.paragraphs_type.link_file
+  module:
+    - entity_browser
+    - media_library
+id: paragraph.link_file.default
+targetEntityType: paragraph
+bundle: link_file
+mode: default
+content:
+  field_file:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link_text:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

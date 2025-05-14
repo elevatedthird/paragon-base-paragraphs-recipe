@@ -1,0 +1,10 @@
+name: "Paragon base paragraphs"
+description: "This recipe sets up the base paragraphs for the Paragon project."
+type: "Paragraphs"
+recipes:
+  - paragon-base-fields
+install:
+  - link
+  - media_library
+config:
+  strict: false
